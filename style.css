@@ -1,0 +1,396 @@
+/*********************************************** GENERAL *********************************************/
+body {
+  background-color: #FFFFFF; /* white background */
+  font-family: 'Roboto', sans-serif; /* modern, clean text font */
+  color: #333333; /* dark grey text */
+}
+
+.cookie-regular {
+  font-family: "Cookie", cursive;
+  font-weight: 200;
+  font-style: normal;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.5rem; 
+    margin-bottom: 1rem;
+    color: #FF4D9E;
+    margin-bottom: 1cap;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2rem; 
+    color: #222; 
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #555; 
+}
+
+strong, b {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+p {
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 2cap;
+  margin-top: 0;
+  padding: 0;
+}
+
+a {
+  color: #FF4D9E; /* electric pink links */
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  background-color: transparent;
+}
+
+/*********************************************** NAVBAR *********************************************/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  position: sticky;   
+  top: 0;
+  z-index: 1000;
+  background: #FFFFFF; /* navbar same as body */
+  border-bottom: 1px solid #CCCCCC; /* subtle border */
+  margin: 0;
+}
+
+#getresume {
+  background-color: #FF4D9E; /* electric pink button */
+  color: #FFFFFF;
+  padding: 0.75rem;
+  border-radius: 12px;
+}
+
+#getresume:hover {
+  background-color: #e63f8c; /* slightly darker on hover */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.nav-link-btn:hover {
+  color: #FF4D9E;
+}
+
+/*********************************************** INTRO *********************************************/
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 6rem;
+  gap: 4rem;
+}
+
+#mypic img {
+  width: 400px;
+  height: auto;
+  border-radius: 100px;
+}
+
+#intro-text {
+  max-width: 600px;
+}
+
+#fullname {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-family: "Cookie";
+  font-size: 7rem;
+  line-height: 1;
+  margin: 0;
+  color: #FF4D9E; 
+}
+
+#lastname {
+  margin-left: 3rem;
+}
+
+#job {
+  color: #555555; 
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+/******************************************** QUICK LINKS SECTION *************************************/
+#me-btns {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.link-btn {
+  padding: 1rem;
+  font-size: 3rem;
+  border-radius: 12px;
+  text-decoration: none;
+  color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.link-btn:hover {
+  background-color: #FF4D9E; 
+}
+
+/********************************************** QUOTE *****************************************************/
+#myquote {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding: 5%;
+  background-color: #FF4D9E; 
+  color: #FFFFFF;
+}
+
+#myquote p {
+  font-size: medium;
+  text-align: right;
+}
+
+blockquote {
+  text-align: center; 
+  font-size: 3cap;
+}
+
+/******************************************** ABOUT ME SECTION *************************************/
+#about {
+  display: flex;
+  flex-direction: row;
+  gap: 25%;
+  padding-bottom: 5%;
+  margin-bottom: 10%;
+}
+
+#about-sum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+}
+
+#about-sum h1 {
+  margin-left: 5cap; 
+}
+
+#about-list {
+  background-color: #F5F5F5; 
+  padding: 5%;
+  width: 100%;
+  margin-left: 10rem;
+  border-radius: 12px;
+}
+
+#about-list ul {
+  list-style-type: circle; 
+}
+
+@keyframes myAnimation {
+  from {
+    color: #333333;
+  }
+  to {
+    color: #FF4D9E;
+  }
+}
+
+#about-list li {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-family: 'Cookie';
+  border-bottom: solid 2px #CCCCCC;
+  color: #333333;
+
+  animation-name: myAnimation;
+  animation-duration: 2s;
+}
+
+#about-list li:nth-child(1) {
+  animation-delay: 0s;
+}
+
+#about-list li:nth-child(2) {
+  animation-delay: 1s;
+}
+
+#about-list li:nth-child(3) {
+  animation-delay: 2s;
+}
+
+#about-list li:hover {
+  animation: myAnimation 2s forwards;
+}
+
+#about-details p {
+  margin-bottom: 1.5cap;
+  padding: 1cap;
+  width: 75%;
+}
+
+/******************************************** PROJECTS SECTION *************************************/
+#projects {
+  background-color: #F5F5F5; 
+  margin: 0;
+  padding: 4rem 4rem 5rem;
+}
+
+#projects-head {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+#projects-head h1 {
+  text-align: center;
+}
+
+.projects-subtitle {
+  color: #666666;
+  margin-bottom: 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: #FFFFFF; /* white cards */
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card h2 {
+  font-size: 1.5rem;
+  color: #FF4D9E;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255, 77, 158, 0.4);
+}
+
+.project-desc {
+  margin: 1rem 0;
+  color: #333333;
+}
+
+.project-tech {
+  font-size: 0.95rem;
+  color: #FF4D9E;
+}
+
+/******************************************* SKILLS  *****************************************/
+#skills {
+  padding-bottom: 3rem;
+}
+
+#skills-group-container {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+.skills-group h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.skill-icons {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.skill-icons i {
+  font-size: 4rem;
+  color: #FF4D9E;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.skill-icons i:hover {
+  color: #e63f8c;
+  transform: scale(1.15);
+}
+
+/****************************************** ON MOBILE  ****************************************/
+@media (max-width: 768px) {
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  #intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #fullname {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .name {
+    font-size: 4rem;
+  }
+
+  #lastname {
+    margin-left: 1rem;
+  }
+
+  #job {
+    margin-top: 0rem;
+  }
+
+  .link-btn {
+    font-size: 2rem;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  #about-details {
+    width: 100%;
+  }
+
+}
